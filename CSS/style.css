@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+section {
+    padding: 20px 10% 0 10%;
+}
+li:first-child {
+    background-color: #EEEEEE;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    cursor: pointer;
+}
+li:first-child:hover {
+    background-color: #CCCCCC;
+}
+li:first-child span:first-child {
+    color: #444444;
+}
+li:first-child span:last-child {
+    justify-self: end;
+    color: #777777;
+    font-weight: 900;
+}
+li:last-child span{
+    display: none;
+}
+li:last-child span.active {
+    display: block;
+    padding: 10px;
+}
+li:first-child.active {
+    background-color: #CCCCCC; 
+}
+
+
+
+
